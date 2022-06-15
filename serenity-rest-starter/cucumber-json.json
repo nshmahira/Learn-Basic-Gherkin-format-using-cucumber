@@ -1,0 +1,287 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-15T11:30:33.076Z",
+        "line": 9,
+        "name": "Calculator Functionality",
+        "description": "",
+        "id": "calculator;calculator-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: Failed to resolve the class file version of the current VM: Unknown Java version: 0\r\n\tat net.bytebuddy.ClassFileVersion$VersionLocator$Unresolved.resolve(ClassFileVersion.java:558)\r\n\tat net.bytebuddy.ClassFileVersion.ofThisVm(ClassFileVersion.java:276)\r\n\tat net.bytebuddy.dynamic.loading.ClassInjector$UsingLookup.isAvailable(ClassInjector.java:1562)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:73)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:91)\r\n\tat net.thucydides.core.steps.StepFactory.lambda$static$0(StepFactory.java:55)\r\n\tat java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)\r\n\tat java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)\r\n\tat java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)\r\n\tat net.thucydides.core.steps.StepFactory.getFactory(StepFactory.java:95)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initStepFactoryUsing(ThucydidesWebDriverSupport.java:183)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initPagesObjectUsing(ThucydidesWebDriverSupport.java:202)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver(ThucydidesWebDriverSupport.java:149)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initialize(ThucydidesWebDriverSupport.java:53)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:214)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:210)\r\n\tat net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:100)\r\n\tat cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:75)\r\n\tat cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:58)\r\n\tat cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:48)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 465745700,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I want count 10 and 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 13
+                },
+                {
+                  "val": "5",
+                  "offset": 20
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iWantCountAnd(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 965500,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I using operator \"+\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"+\"",
+                  "offset": 17
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iUsingOperator(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I receive 15 from this count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 10
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iReceiveFromThisCount(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-15T11:30:33.751Z",
+        "line": 10,
+        "name": "Calculator Functionality",
+        "description": "",
+        "id": "calculator;calculator-functionality;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: Failed to resolve the class file version of the current VM: Unknown Java version: 0\r\n\tat net.bytebuddy.ClassFileVersion$VersionLocator$Unresolved.resolve(ClassFileVersion.java:558)\r\n\tat net.bytebuddy.ClassFileVersion.ofThisVm(ClassFileVersion.java:276)\r\n\tat net.bytebuddy.dynamic.loading.ClassInjector$UsingLookup.isAvailable(ClassInjector.java:1562)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:73)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:91)\r\n\tat net.thucydides.core.steps.StepFactory.lambda$static$0(StepFactory.java:55)\r\n\tat java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)\r\n\tat java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)\r\n\tat java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)\r\n\tat net.thucydides.core.steps.StepFactory.getFactory(StepFactory.java:95)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initStepFactoryUsing(ThucydidesWebDriverSupport.java:183)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initPagesObjectUsing(ThucydidesWebDriverSupport.java:202)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver(ThucydidesWebDriverSupport.java:149)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initialize(ThucydidesWebDriverSupport.java:53)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:214)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:210)\r\n\tat net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:100)\r\n\tat cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:75)\r\n\tat cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:58)\r\n\tat cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:48)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 1994000,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I want count 90 and 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "90",
+                  "offset": 13
+                },
+                {
+                  "val": "10",
+                  "offset": 20
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iWantCountAnd(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 979700,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I using operator \"-\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-\"",
+                  "offset": 17
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iUsingOperator(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 996600,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I receive 80 from this count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80",
+                  "offset": 10
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iReceiveFromThisCount(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-15T11:30:33.779Z",
+        "line": 11,
+        "name": "Calculator Functionality",
+        "description": "",
+        "id": "calculator;calculator-functionality;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: Failed to resolve the class file version of the current VM: Unknown Java version: 0\r\n\tat net.bytebuddy.ClassFileVersion$VersionLocator$Unresolved.resolve(ClassFileVersion.java:558)\r\n\tat net.bytebuddy.ClassFileVersion.ofThisVm(ClassFileVersion.java:276)\r\n\tat net.bytebuddy.dynamic.loading.ClassInjector$UsingLookup.isAvailable(ClassInjector.java:1562)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:73)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:91)\r\n\tat net.thucydides.core.steps.StepFactory.lambda$static$0(StepFactory.java:55)\r\n\tat java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)\r\n\tat java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)\r\n\tat java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)\r\n\tat net.thucydides.core.steps.StepFactory.getFactory(StepFactory.java:95)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initStepFactoryUsing(ThucydidesWebDriverSupport.java:183)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initPagesObjectUsing(ThucydidesWebDriverSupport.java:202)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver(ThucydidesWebDriverSupport.java:149)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initialize(ThucydidesWebDriverSupport.java:53)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:214)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:210)\r\n\tat net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:100)\r\n\tat cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:75)\r\n\tat cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:58)\r\n\tat cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:48)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "duration": 997900,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I want count 15 and 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 13
+                },
+                {
+                  "val": "3",
+                  "offset": 20
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iWantCountAnd(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I using operator \"*\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"*\"",
+                  "offset": 17
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iUsingOperator(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I receive 45 from this count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 10
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iReceiveFromThisCount(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-15T11:30:33.790Z",
+        "line": 12,
+        "name": "Calculator Functionality",
+        "description": "",
+        "id": "calculator;calculator-functionality;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalStateException: Failed to resolve the class file version of the current VM: Unknown Java version: 0\r\n\tat net.bytebuddy.ClassFileVersion$VersionLocator$Unresolved.resolve(ClassFileVersion.java:558)\r\n\tat net.bytebuddy.ClassFileVersion.ofThisVm(ClassFileVersion.java:276)\r\n\tat net.bytebuddy.dynamic.loading.ClassInjector$UsingLookup.isAvailable(ClassInjector.java:1562)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:73)\r\n\tat net.thucydides.core.steps.StepFactory.\u003cinit\u003e(StepFactory.java:91)\r\n\tat net.thucydides.core.steps.StepFactory.lambda$static$0(StepFactory.java:55)\r\n\tat java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)\r\n\tat java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)\r\n\tat java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)\r\n\tat net.thucydides.core.steps.StepFactory.getFactory(StepFactory.java:95)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initStepFactoryUsing(ThucydidesWebDriverSupport.java:183)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initPagesObjectUsing(ThucydidesWebDriverSupport.java:202)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver(ThucydidesWebDriverSupport.java:149)\r\n\tat net.thucydides.core.webdriver.ThucydidesWebDriverSupport.initialize(ThucydidesWebDriverSupport.java:53)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:214)\r\n\tat net.serenitybdd.core.Serenity.setupWebdriverManager(Serenity.java:210)\r\n\tat net.serenitybdd.core.Serenity.initializeWithNoStepListener(Serenity.java:100)\r\n\tat cucumber.runtime.SerenityObjectFactory.newInstance(SerenityObjectFactory.java:75)\r\n\tat cucumber.runtime.SerenityObjectFactory.cacheNewInstance(SerenityObjectFactory.java:58)\r\n\tat cucumber.runtime.SerenityObjectFactory.getInstance(SerenityObjectFactory.java:48)\r\n\tat io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)\r\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)\r\n\tat io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\r\n\tat io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:64)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:104)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:73)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)\r\n\tat com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "I want count 15 and 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 13
+                },
+                {
+                  "val": "3",
+                  "offset": 20
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iWantCountAnd(int,int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I using operator \"/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/\"",
+                  "offset": 17
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iUsingOperator(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I receive 5 from this count",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 10
+                }
+              ],
+              "location": "alterra.step.MyStepdefs.iReceiveFromThisCount(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Calculator",
+    "description": "",
+    "id": "calculator",
+    "keyword": "Feature",
+    "uri": "classpath:features/altatask/altask.feature",
+    "tags": []
+  }
+]
